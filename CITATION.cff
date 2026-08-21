@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "FSPER-Net: Fine-Grained Sparse Prototype-Expert Routing for Long-Tailed Chinese Telecom Fraud Text Classification"
+type: software
+version: 1.0.0
+date-released: 2026-08-21
+authors:
+  - family-names: Tan
+    given-names: Guosheng
+  - family-names: Feng
+    given-names: Yuhao
+  - family-names: Geng
+    given-names: Yiming
+  - family-names: Zhou
+    given-names: Yuxuan
+  - family-names: Yang
+    given-names: Xue
+  - family-names: Li
+    given-names: Jiahui
+keywords:
+  - telecom fraud detection
+  - Chinese text classification
+  - prototype learning
+  - sparse routing
+  - long-tailed classification
+license: MIT
+
