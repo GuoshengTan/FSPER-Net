@@ -1,0 +1,8 @@
+# Tested with Python 3.12 and PyTorch 2.5.1 (CPU or CUDA 12.1 build).
+torch==2.5.1
+transformers==4.57.6
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0
+pandas==3.0.3
+tqdm==4.67.3

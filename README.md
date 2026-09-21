@@ -121,9 +121,25 @@ The three-seed results reported in the manuscript are provided in [`results/pape
 
 ## Citation
 
+## Pretrained Inference Bundle
+
+The trained FGRC-SCD checkpoint and offline inference files are available in
+[`models/fgrc_scd_seed42`](models/fgrc_scd_seed42). The bundle contains the
+seed-42 checkpoint selected by validation Macro-F1, the tokenizer, the
+inference configuration, and checksum files. It does not require retraining.
+
+For a local prediction:
+
+```powershell
+python code/predict.py --device cpu --text "请提供银行卡和验证码完成退款认证。"
+```
+
+The released checkpoint is a single-seed model. The Macro-F1 reported in the
+paper is the three-seed aggregate, so the bundle's reference metrics are
+reported separately in its README.
+
 If this code supports your research, please cite the associated paper. Citation metadata is available in [`CITATION.cff`](CITATION.cff). The repository URL and article DOI will be added after publication.
 
 ## License
 
 The code is released under the [MIT License](LICENSE). Dataset licenses remain with their original providers.
-

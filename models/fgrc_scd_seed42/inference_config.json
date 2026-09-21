@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "dataset": "FGRC-SCD",
+  "training_seed": 42,
+  "training_epochs": 16,
+  "selected_epoch": 12,
+  "selection_metric": "validation_macro_f1",
+  "source_checkpoint_sha256": "7ee5426e8d9ea3d939cae3f8d658a80d1d91e696766078f75c1600edc6a0d7c8",
+  "backbone": "hfl/chinese-roberta-wwm-ext",
+  "backbone_revision": "5c58d0b8ec1d9014354d691c538661bf00bfdb44",
+  "max_length": 192,
+  "label_to_id": {
+    "冒充公检法及政府机关类": 0,
+    "冒充军警购物类诈骗": 1,
+    "冒充电商物流客服类": 2,
+    "冒充领导、熟人类": 3,
+    "无风险": 4,
+    "网络婚恋、交友类": 5,
+    "网黑案件": 6,
+    "虚假信用服务类": 7,
+    "虚假网络投资理财类": 8,
+    "虚假购物、服务类": 9
+  },
+  "model_parameters": {
+    "dropout": 0.3,
+    "temperature": 0.07,
+    "route_strength_max": 0.5,
+    "dynamic_gate_init": 0.05,
+    "architecture_gate_init": 0.5,
+    "hard_concrete_temperature": 0.67,
+    "hard_concrete_gamma": -0.1,
+    "hard_concrete_zeta": 1.1,
+    "centroid_momentum": 0.995
+  },
+  "reference_test": {
+    "samples": 6098,
+    "accuracy": 0.9322728763529026,
+    "macro_f1": 0.8444217452739744,
+    "dataset_fingerprint": "01e3d1e97dc585d142a454285ce7eac3f210a348336118aa74177860de06f727",
+    "test_indices_sha256": "c7db24c3a9509226ee36e61f0d834f66d5df7e09cb250c87ed0ea8012e85a8c6",
+    "split_seed": 42,
+    "batch_size": 16,
+    "precision": "cuda_float16_autocast",
+    "scope": "single_seed_checkpoint_not_multi_seed_mean"
+  }
+}

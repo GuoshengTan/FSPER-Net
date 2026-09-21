@@ -403,9 +403,10 @@ class SparseRoutedFSPSCLClassifier(nn.Module):
         centroid_momentum: float,
         use_router: bool,
         fixed_fusion: bool,
+        encoder_config=None,
     ) -> None:
         super().__init__()
-        self.encoder = AutoModel.from_pretrained(
+        self.encoder = AutoModel.from_config(encoder_config) if encoder_config is not None else AutoModel.from_pretrained(
             pretrained_model,
             cache_dir=cache_dir,
             local_files_only=local_files_only,
